@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="function.js"></script>
+</head>
+	<title>MY FIRST WEBSITE</title>
+	<script type="text/javascript">
+          function playSound(el,soundfile) {
+              var embed = document.getElementById("embed");
+              if (!embed) {
+                  var embed = document.createElement("embed");
+                      embed.id= "embed";
+                      embed.setAttribute("src", soundfile);
+                      embed.setAttribute("hidden", "true");
+                  el.appendChild(embed);
+              } else {
+                  embed.parentNode.removeChild(embed);
+              }
+          }
+      </script>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="media/logo.jpeg" class="Logo">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">SPECIFICATIONS</a></li>
+				<li><a href="#">PRODUCTS</a></li>
+				<li><a href="#">CONNECT</a></li>
+			</ul>
+		</div>
+			<div class="content">
+				<div class="left-col">
+					<h1>MY<br>FAVORITE<br>SONGS</h1>
+				</div>
+				<div class="right-col">
+					<p>1.STHOTHARIPAEN STHOTHARIPAEN YESU DEVANAI</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_1.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span><br>
+    				<p>2.RETTHAM SINTHINEER RETTHAM SINTHINEER</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_2.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span>
+    				<p>3.UMMAI NAMBI VANTHAEN NAAN VETKAPADALA</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_3.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span>
+    				<p>4.PARISUTHARAE ENGAL YESU DEVA</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_4.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span>
+    				<p>5.CHINNA MANUSANKULA PERIYA AANDAVAR</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_5.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span>
+    				<p>6.EN KIRUBAI UNNAKU POTHUM</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_6.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span>
+    				<p>7.RATHAE KOTTAI KULAE NAAN</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_7.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span>
+    				<p>8.MALAIGAL ELLAM VALIGAL AAKUVAR</p>
+					 <span id="du1" mmy" onclick="playSound(this, 'media/song_8.mp3');">
+      <img src="media/play.jpeg" name="Bottom-width="115" height="45" border="0" id="Bottom-1"/>
+    </span>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
